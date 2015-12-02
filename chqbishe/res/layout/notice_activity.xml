@@ -1,0 +1,76 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.gzw.wuye.MainActivity" >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/statusbar_bg"
+        android:id="@+id/notice_menu"
+         >
+
+        <Button
+            android:id="@+id/notice_back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/hu8" 
+            android:layout_centerVertical="true"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/home_notice"
+            android:textColor="@color/textcolor_write"
+            android:background="@null"
+            android:textSize="16dp"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+    
+    <LinearLayout 
+        android:id="@+id/notice_llayout"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal"
+        android:layout_below="@+id/notice_menu"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        >
+       <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="最新通知"
+        android:id="@+id/notice_new"
+        android:textSize="15dp"
+        android:background="@drawable/detailsleft"
+         />
+   	 	<Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="历史公告"
+        android:id="@+id/notice_old"
+        android:textSize="15dp"
+        android:layout_marginLeft="0dp"
+        android:background="@drawable/detailsright1"
+         />
+    </LinearLayout>
+   
+    <FrameLayout 
+        android:id="@+id/notice_fraglayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@id/notice_llayout"
+        android:layout_marginTop="20dp"
+        ></FrameLayout>
+   
+</RelativeLayout>

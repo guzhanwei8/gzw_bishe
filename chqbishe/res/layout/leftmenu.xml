@@ -1,0 +1,164 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/leftmenu"
+     >
+
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="个人中心"
+        android:textSize="25dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:id="@+id/leftmenu_tv1"
+        />
+    
+    <RelativeLayout 
+        android:id="@+id/leftmenu_user_rl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/leftmenu_tv1"
+        android:layout_margin="10dp"
+        >
+        <ImageView
+        android:layout_width="52.0dip"
+        android:layout_height="52.0dip"
+        android:contentDescription="@null"
+        android:src="@drawable/me_head_bg" />
+
+    <com.gzw.wuye.ui.CircularImage
+        android:id="@+id/leftmenu_userphoto"
+        android:layout_width="52.0dip"
+        android:layout_height="52.0dip"
+         />
+    
+    <TextView 
+        android:id="@+id/leftmenu_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="username"
+        android:textSize="20dp"
+        android:layout_toRightOf="@id/leftmenu_userphoto"
+        android:layout_marginLeft="10dp"
+        android:layout_centerVertical="true"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/go_icon" />
+    
+    </RelativeLayout>
+    
+    <RelativeLayout 
+        android:id="@+id/leftmenu_rl2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/leftmenu_user_rl"
+        android:layout_marginTop="30dp"
+        >
+        <TextView 
+        android:id="@+id/leftmenu_line1"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/textcolor_write"
+        android:layout_marginLeft="50dp"
+        />
+        
+        <TextView 
+        android:id="@+id/leftmemu_mess"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_alignLeft="@id/leftmenu_line1"
+        android:layout_below="@id/leftmenu_line1"
+        android:layout_marginTop="20dp"
+        android:text="我的消息"
+        android:textSize="18dp"
+        />
+        
+        <TextView 
+        android:id="@+id/leftmenu_line2"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/textcolor_write"
+        android:layout_below="@id/leftmemu_mess"
+        android:layout_marginTop="10dp"
+        />
+        
+        
+    </RelativeLayout>
+    
+    <RelativeLayout 
+        android:id="@+id/leftmenu_rl3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/leftmenu_rl2"
+        >
+        <TextView 
+            
+        android:id="@+id/leftmemu_guide"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="20dp"
+        android:text="操作指南"
+        android:layout_marginBottom="10dp"
+        android:textSize="18dp"
+        />
+        
+        <TextView 
+        android:id="@+id/leftmenu_line3"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/textcolor_write"
+        android:layout_marginLeft="50dp"
+        android:layout_below="@id/leftmemu_guide"
+        />
+        
+        <TextView 
+        android:id="@+id/leftmemu_about"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_alignLeft="@id/leftmenu_line3"
+        android:layout_below="@id/leftmenu_line3"
+        android:layout_marginTop="20dp"
+        android:textSize="18dp"
+        android:text="关于"
+        />
+        
+        <TextView 
+        android:id="@+id/leftmenu_line4"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/textcolor_write"
+        android:layout_below="@id/leftmemu_about"
+        android:layout_marginTop="10dp"
+        />
+    </RelativeLayout>
+    
+    <RelativeLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/leftmenu_rl3"  
+        >
+        <TextView 
+        android:id="@+id/leftmemu_sign_out"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="退出登陆"
+        android:textSize="18dp"
+        android:gravity="center"
+        />
+    </RelativeLayout>
+    
+
+</RelativeLayout>

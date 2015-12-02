@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+     >
+
+   <TextView 
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:id="@+id/notice_theme"
+       android:textSize="20dp"
+       android:text="theme"
+       android:layout_alignParentTop="true"
+       android:layout_marginTop="10dp"
+       android:layout_marginLeft="10dp"
+       />
+   <TextView 
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:id="@+id/notice_text"
+       android:textSize="16dp"
+       android:text="text"
+       android:layout_below="@id/notice_theme"
+       android:layout_alignLeft="@id/notice_theme"
+       />
+    <TextView 
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:id="@+id/notice_time"
+       android:textSize="16dp"
+       android:text="time"
+       android:layout_alignParentRight="true"
+       android:layout_alignTop="@id/notice_theme"
+       android:layout_marginRight="10dp"
+       />
+
+</RelativeLayout>

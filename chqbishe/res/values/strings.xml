@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">chqbishe</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+	<string name="home_notice">小区公告</string>
+	<string name="home_huangye">社区黄页</string>
+	<string name="home_jiaofei">物业缴费</string>
+	<string name="home_hudong">邻里互动</string>
+	<string name="home_shenfen">身份验证</string>
+	<string name="home_baoxiu">投诉报修</string>
+</resources>

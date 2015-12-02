@@ -1,0 +1,167 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.gzw.wuye.MainActivity" >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/statusbar_bg"
+        android:id="@+id/huangye_menu"
+         >
+
+        <Button
+            android:id="@+id/huangye_back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/hu8" 
+            android:layout_centerVertical="true"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/home_huangye"
+            android:textColor="@color/textcolor_write"
+            android:background="@null"
+            android:textSize="16dp"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+    
+    <LinearLayout
+        android:id="@+id/huangye_dmenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/notice_bg"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+         >
+	<RelativeLayout
+	    android:id="@+id/huangye_juweihui_rl"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:background="@color/notice_bg"
+        android:layout_weight="1"
+         >
+        <ImageView 
+            android:id="@+id/huangye_juweihui_img"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+           android:background="@drawable/juweihui1"
+           android:layout_centerHorizontal="true"
+           android:layout_marginTop="5dp"
+            />
+        <TextView 
+            android:id="@+id/huangye_juweihui_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="居委会"
+            android:layout_below="@id/huangye_juweihui_img"
+            android:layout_centerInParent="true"
+            android:textSize="12dp"
+            />
+        
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/huangye_wuye_rl"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:background="@color/notice_bg"
+        android:layout_weight="1"
+         >
+        <ImageView 
+            android:id="@+id/huangye_wuye_img"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+           android:background="@drawable/wuye1"
+           android:layout_centerHorizontal="true"
+           android:layout_marginTop="5dp"
+            />
+        <TextView 
+            android:id="@+id/huangye_wuye_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="物业"
+            android:layout_below="@id/huangye_wuye_img"
+            android:layout_centerInParent="true"
+            android:textSize="12dp"
+            />
+        
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/huangye_yule_rl"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:background="@color/notice_bg"
+        android:layout_weight="1"
+         >
+        <ImageView 
+            android:id="@+id/huangye_yule_img"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+           android:background="@drawable/yule1"
+          android:layout_centerHorizontal="true"
+           android:layout_marginTop="5dp"
+            />
+        <TextView 
+            android:id="@+id/huangye_yule_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="娱乐"
+            android:layout_below="@id/huangye_yule_img"
+            android:layout_centerInParent="true"
+            android:textSize="12dp"
+            />
+        
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/huangye_fuwu_rl"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:background="@color/notice_bg"
+        android:layout_weight="1"
+         >
+        <ImageView 
+            android:id="@+id/huangye_fuwu_img"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+           android:background="@drawable/fuwu1"
+          android:layout_centerHorizontal="true"
+           android:layout_marginTop="5dp"
+            />
+        <TextView 
+            android:id="@+id/huangye_fuwu_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="服务"
+            android:layout_below="@id/huangye_fuwu_img"
+            android:layout_centerInParent="true"
+            android:textSize="12dp"
+            />
+        
+    </RelativeLayout>
+    </LinearLayout>
+    <android.support.v4.view.ViewPager 
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/huangye_menu"
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginRight="1dp"
+        android:layout_marginBottom="61dp"
+	    android:id="@+id/huangye_viewpager"
+	     >
+	</android.support.v4.view.ViewPager>
+        
+        
+    
+    
+    
+</RelativeLayout>
