@@ -40,6 +40,7 @@ import java.lang.reflect.Method;
 /**
  * Class to manage status and navigation bar tint effects when using KitKat 
  * translucent system UI modes.
+ * 更改菜单栏背景色
  *
  */
 public class SystemBarTintManager {
